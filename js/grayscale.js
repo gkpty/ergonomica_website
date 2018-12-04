@@ -38,12 +38,7 @@
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-
-
-  // pause cycling on product selector
-  $("#products1").carousel("cycle");
-
+  $(window).scroll(navbarCollapse);xs
 
 
 })(jQuery); // End of use strict
