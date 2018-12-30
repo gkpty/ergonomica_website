@@ -3,6 +3,19 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+
+body {
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%);
+}
+
+.bg-product {
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%);
+}
+
+.form-control:focus {
+  background-color: transparent !important;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -90,7 +103,6 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -107,6 +119,29 @@
   -webkit-background-clip: text;
 }
 
+.btop {
+  border-top: 1px solid #e9ecef;
+}
+
+
+@media (max-width: 800px){
+  .header-video {
+    width: 140%;
+    height: auto;
+  }
+  .floating-label-form-group {
+    border-left: none !important;
+  }
+}
+@media (max-width: 500px){
+  .header-video {
+    width: 220%;
+    height: 34em;
+  }
+  .about-section {
+    margin-top: -20%;
+  }
+}
 
 
 .masthead h2 {
@@ -143,12 +178,14 @@
 }
 
 .floating-label-form-group input,
+.floating-label-form-group select,
 .floating-label-form-group textarea {
   font-size: 1em;
   position: relative;
   z-index: 1;
   padding-right: 0;
   padding-left: 0;
+  padding-top: 0;
   resize: none;
   border: none;
   border-radius: 0;
@@ -170,6 +207,7 @@
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
+  padding-top: 5px;
 }
 
 .floating-label-form-group:not(:first-child) {
@@ -218,7 +256,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .about-section {
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+
 }
 
 .about-section p {
@@ -238,14 +276,22 @@ form .row:first-child .floating-label-form-group {
   }
 }
 
-.aboutus .featured-text {
+.featured-text-right {
+  padding: 2rem;
+}
+
+.featured-text {
   padding: 2rem;
 }
 
 @media (min-width: 992px) {
-  .aboutus .featured-text {
+  .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
+  }
+  .featured-text-right {
+    padding: 0 0 0 2rem;
+    border-right: 0.5rem solid #64a19d;
   }
 }
 
@@ -266,7 +312,6 @@ form .row:first-child .floating-label-form-group {
 }
 
 .signup-section {
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -293,7 +338,7 @@ form .row:first-child .floating-label-form-group {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  color: #1C08A0 !important;
+  color: #64a19d !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -335,10 +380,6 @@ a:focus, a:hover {
 
 .text-primary {
   color: #64a19d !important;
-}
-
-footer {
-  padding: 5rem 0;
 }
 
 .carousel-text-l {
@@ -386,7 +427,6 @@ footer {
 /*video background */
 header {
   position: relative;
-  background-color: black;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
@@ -420,8 +460,14 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 1;
+}
+
+@media(max-width: 500px) {
+  header .overlay {
+    height: 34rem;
+  }
 }
 
 .img-pad {
