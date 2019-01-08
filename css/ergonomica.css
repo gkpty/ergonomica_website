@@ -12,6 +12,14 @@ body {
   background: linear-gradient(to top, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%);
 }
 
+.text-light {
+  color: #efefef;
+}
+
+.text-mid {
+  color: #eeeeee;
+}
+
 .form-control:focus {
   background-color: transparent !important;
 }
@@ -24,8 +32,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #2BBBAD;
+  border: 1px solid #2BBBAD;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -38,13 +46,14 @@ body {
   padding: .9rem 0;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+#mainNav .navbar-nav .navbar-brand .nav-item:hover {
+  color: white;
   outline: none;
   background-color: transparent;
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  color: white;
   outline: none;
   background-color: transparent;
 }
@@ -59,21 +68,21 @@ body {
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255);
   }
   #mainNav .nav-link:active {
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: hsla(0, 100%, 100%, .8);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -84,15 +93,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #2BBBAD;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #2BBBAD;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #2BBBAD;
   }
 }
 
@@ -238,8 +247,39 @@ form .row:first-child .floating-label-form-group {
   border: 0;
 }
 
+.code-img {
+  width: 115%;
+  height: auto;
+  margin-left: -15%;
+}
+
+.posture-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 800px){
+  .code-img {
+    width: 120%;
+    height: auto;
+    margin-left: -40%;
+  }
+
+  .posture-img {
+    width: 120%
+    height: auto;
+    margin-right: -40%;
+  }
+
+  .map-pad {
+    padding-right: 5% !important;
+  }
+}
+
+
+
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #2BBBAD;
 }
 
 .btn-primary:hover {
@@ -253,6 +293,14 @@ form .row:first-child .floating-label-form-group {
 
 .btn-primary:active {
   background-color: #467370 !important;
+}
+
+.bg-bl {
+  background-color: hsla(0, 100%, 0%, .1);
+}
+
+.bg-blgr {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%)
 }
 
 .about-section {
@@ -287,11 +335,11 @@ form .row:first-child .floating-label-form-group {
 @media (min-width: 992px) {
   .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #2BBBAD;
   }
   .featured-text-right {
     padding: 0 0 0 2rem;
-    border-right: 0.5rem solid #64a19d;
+    border-right: 0.5rem solid #2BBBAD;
   }
 }
 
@@ -305,7 +353,7 @@ form .row:first-child .floating-label-form-group {
   
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #2BBBAD;
     border-width: .25rem;
     width: 30%;
   }
@@ -338,7 +386,7 @@ form .row:first-child .floating-label-form-group {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  color: #64a19d !important;
+  color: #2BBBAD !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -362,7 +410,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #2BBBAD;
 }
 
 a:focus, a:hover {
@@ -375,11 +423,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #2BBBAD !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #2BBBAD !important;
 }
 
 .carousel-text-l {
@@ -390,11 +438,11 @@ a:focus, a:hover {
 @media(min-width: 500px) {
   .carousel-text-r {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #2BBBAD;
   }
   .carousel-text-l {
     padding: 0 0 0 2rem;
-    border-right: 0.5rem solid #64a19d;
+    border-right: 0.5rem solid #2BBBAD;
   }
 }
 
