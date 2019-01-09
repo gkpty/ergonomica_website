@@ -26,7 +26,7 @@ body {
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: hsla(0, 100%, 100%, .8);
 }
 
 #mainNav .navbar-toggler {
@@ -262,7 +262,7 @@ form .row:first-child .floating-label-form-group {
   .code-img {
     width: 120%;
     height: auto;
-    margin-left: -40%;
+    margin-left: -35%;
   }
 
   .posture-img {
