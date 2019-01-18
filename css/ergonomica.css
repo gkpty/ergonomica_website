@@ -6,6 +6,22 @@
 
 body {
   background: linear-gradient(to top, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14pt;
+}
+
+body h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #45BEB4;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
 }
 
 .bg-product {
@@ -114,22 +130,12 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 14.7rem 0;
   background: url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
-
-.masthead h1 {
-  font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 .btop {
@@ -185,6 +191,16 @@ body {
   }
 }
 
+.br-1{
+
+}
+
+@media(min-width: 800px) {
+  .br-1{
+    border-right: 1px solid #6c757d; 
+  }
+}
+
 .floating-label-form-group {
   position: relative;
   border-bottom: 1px solid #6c757d;
@@ -207,6 +223,10 @@ body {
   box-shadow: none !important;
 }
 
+.first-option {
+  color: #efefef !important;
+}
+
 .floating-label-form-group label {
   font-size: 0.85em;
   color: #efefef;
@@ -225,7 +245,6 @@ body {
 
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #6c757d;
 }
 
 .floating-label-form-group-with-value label {
@@ -237,14 +256,9 @@ body {
   color: #18BC9C;
 }
 
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #6c757d;
-}
-
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -285,7 +299,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .btn-primary {
-  background-color: #2BBBAD;
+  background-color: #45BEB4;
 }
 
 .btn-primary:hover {
@@ -341,11 +355,11 @@ form .row:first-child .floating-label-form-group {
 @media (min-width: 992px) {
   .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #2BBBAD;
+    border-left: 0.5rem solid #45BEB4;
   }
   .featured-text-right {
     padding: 0 0 0 2rem;
-    border-right: 0.5rem solid #2BBBAD;
+    border-right: 0.5rem solid #45BEB4;
   }
 }
 
@@ -359,7 +373,7 @@ form .row:first-child .floating-label-form-group {
   
   }
   .projects-section .project-text hr {
-    border-color: #2BBBAD;
+    border-color: #45BEB4;
     border-width: .25rem;
     width: 30%;
   }
@@ -392,7 +406,7 @@ form .row:first-child .floating-label-form-group {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  color: #2BBBAD !important;
+  color: #45BEB4 !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -409,31 +423,16 @@ form .row:first-child .floating-label-form-group {
   color: #4f837f ! important;
 }
 
-
-body {
-  font-family: 'Nunito';
-  letter-spacing: 0.0625em;
-}
-
-a {
-  color: #2BBBAD;
-}
-
-a:focus, a:hover {
-  text-decoration: none;
-  color: #3c6360;
-}
-
 .bg-black {
   background-color: #161616 !important;
 }
 
 .bg-primary {
-  background-color: #2BBBAD !important;
+  background-color: #45BEB4 !important;
 }
 
 .text-primary {
-  color: #2BBBAD !important;
+  color: #45BEB4 !important;
 }
 
 .carousel-text-l {
@@ -444,11 +443,11 @@ a:focus, a:hover {
 @media(min-width: 500px) {
   .carousel-text-r {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #2BBBAD;
+    border-left: 0.5rem solid #45BEB4;
   }
   .carousel-text-l {
     padding: 0 0 0 2rem;
-    border-right: 0.5rem solid #2BBBAD;
+    border-right: 0.5rem solid #45BEB4;
   }
 }
 

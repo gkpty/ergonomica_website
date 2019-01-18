@@ -45,3 +45,19 @@ $(function(){
         return JSON.stringify(obj);
     }
 });
+
+$("select").on("change", function() {    
+    if($('#product_type').val() == "custom"){
+        $(".notshown").each(function() {
+          $(this).removeClass("d-none");
+        });
+        $('#model_options').addClass("d-none");    
+    }
+    else {
+        $(".notshown").each(function() {
+          $(this).addClass("d-none");
+        });
+        $('#model_options').removeClass("d-none");
+    }
+
+});
