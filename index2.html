@@ -85,7 +85,7 @@
           <div class="col-lg-7 order-0 order-lg-12">
             <div class="text-center text-lg-left text-white-50">
               <h2 class="pb-3 text-light">Standing Desks</h2>
-              <p>Los standup Desks de ergonomica son escritorios electronicos ajustables que revolucionarán tu forma de trabajar. Esocge uno de nuestros modelos completos o escoge las partes y te armamos tu escritorio personalizado.</p>
+              <p>Los standup Desks de ergonomica son escritorios electronicos ajustables que revolucionarán tu forma de trabajar. Esocge uno de nuestros modelos completos o escoge las partes que quieras en nuestro catalogo y te armamos tu escritorio personalizado.</p>
             </div>
           </div>
         </div>
@@ -258,10 +258,10 @@
         <div class="col-lg-7">
           <div class="text-center text-lg-left">
             <h3 class="pb-3">¿Porque un Escritorio Standup?</h3>
+            <p class="text-black-50">Reduce la fatiga</p>
             <p class="text-black-50">Mejora la circulacion</p>
-            <p class="text-black-50">Mejora la Postura.</p>
-            <p class="text-black-50">Es Bien Comodo</p>
-            <p class="text-black-50">En caso no tengamos los productos en inventario, el tiempo de entrega e instalacion es aproxiadamente un mes.</p>
+            <p class="text-black-50">Mejora la Postura</p>
+            <p class="text-black-50">Es super Comodo</p>
           </div>
         </div>
         <div class="col-lg-5">
@@ -285,7 +285,7 @@
         <div class="col-lg-7">
           <div class="text-center text-lg-left">
             <h3 class="pb-3">Ven a probar los escritorios del futuro</h3>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <p class="text-black-50 mb-0">Pasate por nuestra oficina, tomate un buen cafe y prueba nuestros productos. Una vez que pruebes uno de nuestros escritorios entenderas que no existe una mejor forma de trabajar.</p>
             <div class="row pt-5">
               <div class="col-sm-6">
                 <div class="text-center">
@@ -373,7 +373,7 @@
                 <div class="row btop">
                   <div class="form-group col-sm-12 col-lg-12 validate-input floating-label-form-group floating-label-form-group-with-value controls mb-0 pb-2" data-validate = "Ingrese su nombre">
                     <label>Tipo de Producto</label>
-                    <select class="form-control" id="product_type" name="finish" placeholder="Acabado" required>
+                    <select class="form-control" id="product_type" name="type" placeholder="Acabado" required>
                       <option selected value="model">Modelo Completo</option>
                       <option value="custom">Personalizado</option>
                     </select>
@@ -381,10 +381,10 @@
                 </div>
                 <div id="product_options">
                 <div class="row">
-                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 d-none notshown" data-validate = "Ingrese su nombre">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 notshown d-none" data-validate = "Ingrese su nombre">
                     <label>Acabado</label>
-                    <select class="form-control" id="product_finish" name="finish" placeholder="Acabado" required>
-                      <option value="" disabled selected>Acabado</option>
+                    <select class="form-control hideinput" id="product_finish" name="finish" placeholder="Acabado">
+                      <option value="null" hidden selected>Acabado</option>
                       <option value="hardwood">Madera Tropical</option>
                       <option value="glass">Vidrio Templado</option>
                       <option value="basic-white">Basico - Blanco</option>
@@ -392,20 +392,20 @@
                       <option value="basic-texture">Basico - Textura de Madera</option>
                     </select>
                   </div>
-                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 d-none notshown">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 notshown d-none">
                     <label>Marco</label>
-                    <select class="form-control" id="product_frame" name="frame" required>
-                      <option value="" disabled selected>Marco</option>
+                    <select class="form-control hideinput" id="product_frame" name="frame">
+                      <option value="null" hidden selected>Marco</option>
                       <option value="black-single">Negro - 1 Motor</option>
                       <option value="black-double">Negro - 2 Motores</option>
                       <option value="white-single">Blanco - 1 Motor</option>
                       <option value="white-double">Blanco - 2 Motores</option>
                     </select>
                   </div>
-                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 d-none notshown">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 notshown d-none">
                     <label>Tamaño</label>
-                    <select class="form-control" id="product_size" name="size" required>
-                      <option value="" disabled selected>Tamaño</option>
+                    <select class="form-control hideinput" id="product_size" name="size">
+                      <option value="null" hidden selected>Tamaño</option>
                       <option value="5 x 2.5">5' x 2.5'</option>
                       <option value="3 x 2">3' x 2'</option>
                       <option value="personalizado">Personalizado</option>
@@ -413,8 +413,8 @@
                   </div>
                   <div id="model_options" class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 shown">
                     <label>Modelo</label>
-                    <select class="form-control" id="product_size" name="size" required>
-                      <option value="" disabled selected>Modelo</option>
+                    <select class="form-control showinput" id="product_model" name="model">
+                      <option value="null" hidden selected>Modelo</option>
                       <option value="5 x 2.5">5' x 2.5'</option>
                       <option value="3 x 2">3' x 2'</option>
                       <option value="personalizado">Personalizado</option>
@@ -423,7 +423,7 @@
                   <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su apellido">
                     <label>Cantidad</label>
                     <select class="form-control" id="product_qty" name="qty" required>
-                      <option value="" disabled selected>Qty</option>
+                      <option value="null" hidden selected>Qty</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
