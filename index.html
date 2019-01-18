@@ -15,8 +15,11 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://file.myfontastic.com/gbeWu57wfnju9JRHr72qfg/icons.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/ergonomica-favicon.png">
 
     <!-- Custom styles for this template -->
     <link href="css/ergonomica.css" rel="stylesheet">
@@ -28,7 +31,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ergonomica</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <div class="icon-ergonomica" style="width: 150%;"><span class="d-none d-lg-inline pl-3">Ergonomica</span></div>
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -36,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">sobre nosotros</a>
+              <a class="nav-link js-scroll-trigger" href="#products">productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">productos</a>
+              <a class="nav-link js-scroll-trigger" href="#show_room">contactanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">contactanos</a>
+              <a class="nav-link js-scroll-trigger" href="#contact_us">compra</a>
             </li>
           </ul>
         </div>
@@ -55,14 +60,14 @@
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="header-video">
         <source src="video/ergonomica.mp4">
       </video>
-      <div class="contaner h-100">
+      <div class="container h-100">
         <div class="d-flex text-center h-100">
           <div class="my-auto w-100 text-white">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-              <h2 class="mx-auto">ergonomica <span class="text-white-50"> | Escritorios Modernos</span>
+              <h2 class="mx-auto">Ergonomica <span class="text-white-50"> | Escritorios Modernos</span>
               </h2>
-              <a href="#about" class="btn btn-primary js-scroll-trigger" style="margin-top: 50px">contactanos</a>
+              <a href="#contact_us" class="btn btn-primary js-scroll-trigger" style="margin-top: 50px">haz tu pedido</a>
             </div>
           </div>
           </div>
@@ -70,98 +75,34 @@
       </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section pt-5 text-center">
-      <div class="container-fluid">
-          <div class="col-lg-12 mx-auto">
-            <div class="featured-text text-center text-white-50">
-              <h4>¿por qué un escritorio moderno?</h4>
-            </div>
-            <!-- carousel -->
-            <div>
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox" style="padding-bottom: 50px">
-                  <!-- Slide One - Set the background image for this slide in the line below -->
-                  <div class="carousel-item active" style="background-color: #161616; background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
-                    <div class="">
-                      <div class="row align-items-center">
-                        <div class="col-md-6 order-md-12">
-                          <img class="img-fluid" src="img/desk1.png" alt="">
-                        </div>
-                        <div class="col-md-6 order-md-0">
-                          <div class="text-center text-white text-lg-left carousel-text-l pt-3">
-                            <h5>Incrementa la Productividad.</h5>
-                            <p class="text-primary mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slide Two - Set the background image for this slide in the line below -->
-                  <div class="carousel-item" style="background-color: #161616; background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
-                    <div class="">
-                      <div class="row align-items-center">
-                        <div class="col-md-6">
-                          <img class="img-fluid" src="img/desk2.png" alt="">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="featured-text text-center text-white carousel-text-r text-lg-left pt-3">
-                            <h5>Es Bueno para la Salud.</h5>
-                            <p class="text-primary mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slide Three - Set the background image for this slide in the line below -->
-                  <div class="carousel-item" style="background-color: #161616; background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
-                    <div class="">
-                      <div class="row align-items-center">
-                        <div class="col-md-6 order-md-12">
-                          <img class="img-fluid" src="img/desk1.png" alt="">
-                        </div>
-                        <div class="col-md-6 order-md-0">
-                          <div class="text-center text-white text-lg-left carousel-text-l pt-3">
-                            <h5>Es Muy Comodo.</h5>
-                            <p class="text-primary mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>  
+    <!-- Nuestros Servicios -->
+    <section class="pt-5 aboutus" id="our_services">
+      <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-lg-5 order-12 order-lg-0">
+            <img class="mb-3 mb-lg-0 code-img" src="img/code.png" alt="">
           </div>
-        </div>
+          <div class="col-lg-7 order-0 order-lg-12">
+            <div class="text-center text-lg-left text-white-50">
+              <h1 class="pb-4 text-light">Standing Desks</h1>
+              <p class="lgtext">Los stand up Desks de Ergonomica son escritorios electronicos ajustables que revolucionarán tu forma de trabajar. Esocge uno de nuestros modelos completos o escoge las partes que quieras en nuestro catalogo y te armamos tu escritorio personalizado.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-<!-- Nuestros Productos -->
-    <section id="projects" class="projects-section signup-section pt-5 pb-3 pb-lg-0">
+    <!-- Nuestros Productos -->
+    <section id="products" class="projects-section signup-section pt-5 pb-3 pb-lg-0">
       <div class="container">
         <div class="text-center text-lg-left text-white catalog-title">
-          <h4>nuestros productos | <small><a href="">descargar el catalogo PDF</a></small></h4>
+          <h3>Nuestros Productos | <small><a href="ergonomica_catalogo_2019.pdf">Descarga el catalogo PDF</a></small></h3>
         </div>
         <!-- product 1 -->
         <div class="row">
           <div id="products1" class="carousel slide">
             <div class="row justify-content-center no-gutters mb-3 mb-lg-0">
-              <div class="col-lg-6 bg-black text-center project order-12 order-lg-0">
+              <div class="col-lg-6 bg-product text-center project order-12 order-lg-0">
                 <div class="d-flex h-100">
                   <div class="project-text w-100 my-auto text-center text-lg-left">
                     <h4 class="text-white">Glass</h4>
@@ -211,21 +152,7 @@
         <div class="row">
           <div id="products2" class="carousel slide">
             <div class="row justify-content-center no-gutters mb-3 mb-lg-0">
-              <div class="carousel-inner col-lg-6" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active h-100">
-                  <img class="img-fluid" src="img/wood/1.jpg" alt="">
-                </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item h-100">
-                  <img class="img-fluid" src="img/wood/2.jpg" alt="">
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item h-100">
-                  <img class="img-fluid" src="img/wood/3.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-6 bg-black text-center project">
+              <div class="col-lg-6 bg-product text-center project order-12">
                 <div class="d-flex h-100">
                   <div class="project-text w-100 my-auto text-center text-lg-left">
                     <h4 class="text-white">Wood</h4>
@@ -253,6 +180,20 @@
                   </div>
                 </div>  
               </div>
+              <div class="carousel-inner col-lg-6 order-0" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active h-100">
+                  <img class="img-fluid" src="img/wood/1.jpg" alt="">
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item h-100">
+                  <img class="img-fluid" src="img/wood/2.jpg" alt="">
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item h-100">
+                  <img class="img-fluid" src="img/wood/3.jpg" alt="">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -261,7 +202,7 @@
           <div class="row">
           <div id="products3" class="carousel slide">
             <div class="row justify-content-center no-gutters mb-3 mb-lg-0">
-              <div class="col-lg-6 bg-black text-center project order-12 order-lg-0">
+              <div class="col-lg-6 bg-product text-center project order-12 order-lg-0">
                 <div class="d-flex h-100">
                   <div class="project-text w-100 my-auto text-center text-lg-left">
                     <h4 class="text-white">Basic</h4>
@@ -310,87 +251,47 @@
     </div>
   </section>
 
-  <!-- Sobre Nosotros -->
-  <section class="pt-5 aboutus">
+  <!-- PORQUE UN ESCRITORIO MODERNO -->
+  <section class="pt-5 aboutus bg-blgr pb-2">
     <div class="container">
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-lg-5">
-          <h4 class="text-secondary">sobre nosotros</h4>
-          <img class="img-fluid mb-3 mb-lg-0" src="img/desk1.png" alt="">
-        </div>
         <div class="col-lg-7">
-          <div class="featured-text text-center text-lg-left">
-            <h4>En ergonomica damos Servicio Completo.</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          <div class="text-center text-lg-left">
+            <h1 class="pb-4">¿Porque un Escritorio Stand Up?</h1>
+            <ul>
+              <li class="xltext text-black-50 pb-2">Reduce la fatiga</li>
+              <li class="xltext text-black-50 pb-2">Mejora la circulacion</li>
+              <li class="xltext text-black-50 pb-2">Mejora la Postura</li>
+              <li class="xltext text-black-50 pb-2">Es super Comodo</li>
+            </ul>
           </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="mb-3 mb-lg-0 posture-img" src="img/posture.png" alt="">
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- CONTACT SECTION -->
-    <section id="contact_us" class="straight-up">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="text-center section-title p-5">Contactanos</h2>
+  <!-- SHOW ROOM -->
+  <section class="pt-5 aboutus" id="show_room">
+    <div class="container">
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-lg-5 map-pad">
+          <h4 class="text-secondary">Show Room</h4>
+          <div class="row mb-3">
+            <div id="map" class="col-sm-12 text-center img-fluid"></div>
           </div>
         </div>
-        <div class="row">
-          <!-- Contact us Form -->
-          <div class="col-md-6 order-sm-0 order-md-12">
-            <div class="container">
-              <form id="contactus-form" class="contact-form" action="#">  
-                <div class="row">
-                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su nombre">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" autocomplete="given-name" id="firstname" name="firstname" placeholder="Nombre" required>
-                  </div>
-                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su apellido">
-                    <label>Apellido</label>
-                    <input type="text" class="form-control" autocomplete="family-name" id="lastname" name="lastname" placeholder="Apellido" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "ingrese un correo valido">
-                    <label>Email</label>
-                    <input type="email" class="form-control" autocomplete="email" id="contact_email" name="email" placeholder="Correo Electronico" required>
-                  </div>  
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su mensaje">
-                    <label>Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" placeholder="Mensaje" required></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 text-left">
-                    <h3 id="contact-status" class="sending-text" style="display:none;">Gracias por Contactarnos</h3>
-                  </div>
-                </div>  
-                <div class="row pt-4">
-                  <div class="col-md-12 text-center text-lg-left">
-                    <button class="contact1-form-btn btn submit" type="submit" id="contact-btn">
-                      <span>
-                        Enviar
-                        <i class="fab fa-long-arrow-right" aria-hidden="true"></i>
-                      </span>
-                    </button>
-                  </div> 
-                </div>
-              </form>
-            </div>
-          </div>
-          <!-- Map -->
-          <div class="col-md-6 order-md-0 order-sm-12">
-            <div class="row map">
-              <div id="map" class="col-sm-12 text-center"></div>
-            </div>
-            <div class="row">
+        <div class="col-lg-7">
+          <div class="text-center text-lg-left">
+            <h3 class="pb-4">Ven a probar los escritorios del futuro</h3>
+            <p class="text-black-50 mb-0">Pasate por nuestra oficina, tomate un buen cafe y prueba nuestros productos. Una vez que pruebes uno de nuestros escritorios entenderás que no existe una mejor forma de trabajar.</p>
+            <div class="row pt-5">
               <div class="col-sm-6">
                 <div class="text-center">
-                  <i class="fa fa-map-marker"></i>
+                  <i class="fa fa-map-marker text-secondary"></i>
                 </div>
                 <address class="text-secondary text-address">
                    Calle 56 Este con Ave Samuel Lewis, Edificio PDC, Oficina 19-A2, Urb. Obarrio, Panamá
@@ -398,7 +299,7 @@
               </div>
               <div class="col-sm-6">
                 <div class="text-center">
-                  <i class="fa fa-phone"></i>
+                  <i class="fa fa-phone text-secondary"></i>
                 </div>
                 <div class="row">
                   <div class="col-sm-12 text-center">
@@ -412,14 +313,179 @@
                 </div>
               </div>
             </div>
-          </div>                  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+    <section id="contact_us" class="bg-bl">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-6 order-sm-12 order-md-0">
+            <h2 class="pb-3 text-center text-lg-left">Haz tu pedido</h2>
+            <div class="text-black-50" style="margin-left: -20px;">
+              <ol>
+                <li>Descarga el <a href="ergonomica_catalogo_2019.pdf">Catalogo PDF</a></li>
+                <li>Llena la sección de datos con tus datos personales</li>
+                <li>En Tipo de Producto, escoge entre uno de nuestros modelos completos o un escritorio personalizado.</li>
+                <li>Si escoges un escritorio personalizado</li>
+                <ol>
+                  <li>Selecciona la base del escritorio</li>
+                  <li>Selecciona el acabado del sobre</li>
+                  <li>Selecciona el tamaño del sobre, si deseas un tamaño personalizado indicalo en las especificaciones</li>
+                </ol>
+                <li>Selecciona la cantidad de escritorios</li>
+                <li>En las especificaciones, indica si deseas agregar accesorios o alguna personalización particular</li>
+                <li>Te contactaremos lo antes posible con las instrucciones de pago y el tiempo de entrega</li>
+                <li>Te llevamos e instalamos tu escritorio</li>
+              </ol>
+              <ul>
+                <li class="ps small">Aceptamos pagos por transferencia, en cheque o efectivo.</li>
+                <li class="ps small">Órdenes de varios escritorios o escritorios personalizados pueden demorar 4 a 5 semanas.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 order-sm-0 order-md-12">
+            <div class="container pt-4">
+              <div class="row">
+                <div class="pl-2">Datos:</div>
+              </div>
+              <form id="contactus-form" class="contact-form pb-5" action="#">  
+                <div class="row btop">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1" data-validate = "Ingrese su nombre">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" autocomplete="name" id="firstname" name="firstname" placeholder="Nombre" required>
+                  </div>
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su apellido">
+                    <label>Apellido</label>
+                    <input type="text" class="form-control" autocomplete="name" id="lastname" name="lastname" placeholder="Apellido" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1" data-validate = "ingrese un correo valido">
+                    <label>Telefono</label>
+                    <input type="tel" class="form-control" autocomplete="tel" id="contact_phone" name="phone" placeholder="Telefono" required>
+                  </div>      
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "ingrese un correo valido">
+                    <label>Email</label>
+                    <input type="email" class="form-control" autocomplete="email" id="contact_email" name="email" placeholder="Correo Electronico" required>
+                  </div>  
+                </div>
+                <!-- Productos -->
+                <div class="row pt-5"></div>
+                <div class="row">
+                  <div class="pl-2">Producto:</div>
+                </div>
+                <div class="row btop">
+                  <div class="form-group col-sm-12 col-lg-12 validate-input floating-label-form-group floating-label-form-group-with-value controls mb-0 pb-2" data-validate = "Ingrese su nombre">
+                    <label>Tipo de Producto</label>
+                    <select class="form-control" id="product_type" name="type" placeholder="Acabado" required>
+                      <option selected value="model">Modelo Completo</option>
+                      <option value="custom">Personalizado</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="product_options">
+                <div class="row">
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 notshown d-none" data-validate = "Ingrese su nombre">
+                    <label>Acabado</label>
+                    <select class="form-control hideinput" id="product_finish" name="finish" placeholder="Acabado">
+                      <option value="null" hidden selected>Acabado</option>
+                      <option value="hardwood">Madera Tropical</option>
+                      <option value="glass">Vidrio Templado</option>
+                      <option value="basic-white">Basico - Blanco</option>
+                      <option value="basic-black">Basico - Negro</option>
+                      <option value="basic-texture">Basico - Textura de Madera</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 notshown d-none">
+                    <label>Marco</label>
+                    <select class="form-control hideinput" id="product_frame" name="frame">
+                      <option value="null" hidden selected>Marco</option>
+                      <option value="black-single">Negro - 1 Motor</option>
+                      <option value="black-double">Negro - 2 Motores</option>
+                      <option value="white-single">Blanco - 1 Motor</option>
+                      <option value="white-double">Blanco - 2 Motores</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 notshown d-none">
+                    <label>Tamaño</label>
+                    <select class="form-control hideinput" id="product_size" name="size">
+                      <option value="null" hidden selected>Tamaño</option>
+                      <option value="5 x 2.5">5' x 2.5'</option>
+                      <option value="3 x 2">3' x 2'</option>
+                      <option value="personalizado">Personalizado</option>
+                    </select>
+                  </div>
+                  <div id="model_options" class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2 br-1 shown">
+                    <label>Modelo</label>
+                    <select class="form-control showinput" id="product_model" name="model">
+                      <option value="null" hidden selected>Modelo</option>
+                      <option value="5 x 2.5">5' x 2.5'</option>
+                      <option value="3 x 2">3' x 2'</option>
+                      <option value="personalizado">Personalizado</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-12 col-lg-6 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su apellido">
+                    <label>Cantidad</label>
+                    <select class="form-control" id="product_qty" name="qty" required>
+                      <option value="null" hidden selected>Qty</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 validate-input floating-label-form-group controls mb-0 pb-2" data-validate = "Ingrese su mensaje">
+                    <label>Especificaciones</label>
+                    <textarea class="form-control" id="product_specs" name="specs" placeholder="Especificaciones" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 text-left">
+                    <h3 id="contact-status" class="sending-text" style="display:none;">Gracias por Contactarnos</h3>
+                  </div>
+                </div>  
+                <div class="row pt-4">
+                  <div class="col-md-12 text-center text-lg-left">
+                    <button class="contact1-form-btn btn btn-primary submit" type="submit" id="contact-btn">
+                      <span>
+                        Enviar
+                        <i class="fab fa-long-arrow-right" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div> 
+                </div>
+              </form>
+            </div>
+          </div>              
         </div>
       </div>
     </section>
 
     <script>
       //lambda function URL
-      var URL = "https://erkeqet3t0.execute-api.us-east-1.amazonaws.com/development/sendMail";
+      var URL = "https://iu5qziiyge.execute-api.us-east-1.amazonaws.com/development/sendMail";
     </script>
 
     <!-- Social -->
@@ -431,26 +497,14 @@
               <a href="#">
                 <i class="fab fa-whatsapp"></i>
               </a>
-              <a href="https://www.linkedin.com/company/torus-digital">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.facebook.com/Torus-Digital-1208028369338721/">
+              <a href="https://www.facebook.com/ergonomica.desk.1">
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="https://www.instagram.com/torusdigital/">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="https://github.com/torus-digital">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://dribbble.com/Torus">
-                <i class="fab fa-dribbble"></i>
-              </a>
-              <a href="https://www.behance.net/gabrielb4e1">
-                <i class="fab fa-behance"></i>
-              </a>
-              <a href="https://codepen.io/gkpty/">
-                <i class="fab fa-codepen"></i>
+              <a href="https://www.pinterest.com/ergonomicadesk/">
+                <i class="fab fa-pinterest"></i>
               </a>
             </div>
           </div>
@@ -459,9 +513,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
+    <footer class="bg-footer small text-center text-secondary pt-2">
       <div class="container">
-        Copyright &copy; ergonomica 2018
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="text-lg-left">Copyright &copy; ergonomica 2018</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-lg-right">powered by <a href="http://torus-digital.com">Torus</a></p>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -474,6 +535,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/ergonomica.js"></script>
+    <script src="js/contact.js"></script>
 
     <!--Google Maps-->
     <script async defer
