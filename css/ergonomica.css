@@ -29,6 +29,13 @@ ul li {
   list-style: none;
 }
 
+.dsh:before {
+  content: "-";
+  position: relative;
+  left: -18px;
+  bottom: -3px;
+}
+
 li.ps:before {
   content: "*";
   position: relative;
@@ -147,7 +154,6 @@ li.ps:before {
   height: auto;
   min-height: 35rem;
   padding: 14.7rem 0;
-  background: url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -251,12 +257,38 @@ textarea:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.lgtext{
-  font-size: 130%;
+@media(min-width: 600px){
+  .lgtext{
+  font-size: 120%;
+  }
+
+  .code-title {
+    padding-top: 10%;
+  }
 }
 
 .xltext {
   font-size: 150%;
+}
+
+@media(max-width: 800px){
+  h1, h2, h3 {
+    font-size: 160%;
+  }
+
+  .hlist{
+    padding-left: 12%;
+  }
+}
+
+.product-title{
+
+}
+
+@media(max-width: 500px) {
+    .product-text{
+    font-size: 75%;
+  }
 }
 
 
@@ -282,10 +314,6 @@ textarea:-webkit-autofill:active {
 
 select {
   margin-left: -6px;
-}
-
-option {
-  color: #efefef !important;
 }
 
 .floating-label-form-group-with-value label {
@@ -315,20 +343,19 @@ option {
 .posture-img {
   width: 100%;
   height: auto;
-  margin-right: -15%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .code-img {
     width: 120%;
     height: auto;
-    margin-left: -35%;
+    margin-left: -30%;
   }
 
   .posture-img {
-    width: 120%;
+    width: 110%;
     height: auto;
-    margin-right: -40%;
+    margin-right: -10%;
   }
 
   .map-pad {
@@ -516,6 +543,7 @@ option {
 #map {
   height: 300px;
   width: 100%;
+  margin-bottom: -6%;
 }
 
 
