@@ -17,11 +17,23 @@ body h1, h2, h3, h4 {
 
 a {
   color: #45BEB4;
+  font-weight: bolder;
 }
 
 a:focus, a:hover {
   text-decoration: none;
   color: #3c6360;
+}
+
+ul li {
+  list-style: none;
+}
+
+li.ps:before {
+  content: "*";
+  position: relative;
+  left: -18px;
+  bottom: -3px;
 }
 
 .bg-product {
@@ -239,7 +251,13 @@ textarea:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.lgtext{
+  font-size: 130%;
+}
 
+.xltext {
+  font-size: 150%;
+}
 
 
 .floating-label-form-group label {
@@ -297,9 +315,10 @@ option {
 .posture-img {
   width: 100%;
   height: auto;
+  margin-right: -15%;
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
   .code-img {
     width: 120%;
     height: auto;
@@ -307,7 +326,7 @@ option {
   }
 
   .posture-img {
-    width: 120%
+    width: 120%;
     height: auto;
     margin-right: -40%;
   }
