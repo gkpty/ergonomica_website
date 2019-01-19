@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/gkpty/ergonomica_website/issues"
   },
-  "homepage": "https://github.com/gkpty/ergonomica_website#readme"
+  "homepage": "https://github.com/gkpty/ergonomica_website#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.8"
+  }
 }
