@@ -67,5 +67,16 @@ function initMap() {
 }
 
 
+$.ajax({
+  url: "../img",
+  success: function(data){
+     $(data).find("a:contains(.jpg)").each(function(){
+        // will loop through 
+        var images = $(this).attr("href");
 
+        $('<p></p>').html(images).appendTo('#my_div')
+
+     });
+  }
+})
 
