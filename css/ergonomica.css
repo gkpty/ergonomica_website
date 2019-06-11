@@ -16,13 +16,13 @@ body h1, h2, h3, h4 {
 }
 
 a {
-  color: #45BEB4;
+  color: #3c6360;
   font-weight: bolder;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #45BEB4;
 }
 
 ul li {
