@@ -49,7 +49,7 @@
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);xs
+  $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
 
@@ -67,5 +67,16 @@ function initMap() {
 }
 
 
+$.ajax({
+  url: "../img",
+  success: function(data){
+     $(data).find("a:contains(.jpg)").each(function(){
+        // will loop through 
+        var images = $(this).attr("href");
 
+        $('<p></p>').html(images).appendTo('#my_div')
+
+     });
+  }
+})
 
